@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">n-back</string>
+
+    <string name="stimuli_type">Type: </string>
+    <string name="level_n">Level: </string>
+    <string name="step_ongoing">Step: </string>
+    <string name="correct_ongoing">Correct: </string>
+    <string name="trial_time">Trial time: </string>
+    <string name="match_visual_button">Visual\nMatch</string>
+    <string name="match_audio_button">Audio\nMatch</string>
+    <string name="restart_button">Start</string>
+    <string name="reset_button">Reset</string>
+    <string name="visual_setting">Visual</string>
+    <string name="audio_setting">Audio</string>
+    <string name="settings">Settings</string>
+    <string name="number_events">Number of events: </string>
+    <string name="update_button">Update</string>
+    <string name="both_stimuli">Type: Audio and Visual</string>
+    <string name="audio_stimuli">Type: Audio</string>
+    <string name="visual_stimuli">Type: Visual</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="return_button">Return</string>
+    <string name="results">Results</string>
+
+    <string-array name="n_match">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="nb_events">
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+    </string-array>
+
+    <string-array name="time_events">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+</resources>

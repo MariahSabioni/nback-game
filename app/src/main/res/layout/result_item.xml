@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_margin="4dp"
+        android:background="#1001">
+
+        <ImageView
+            android:id="@+id/type_audio"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/level_n_res"
+            android:layout_alignBottom="@+id/trial_time_res"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            app:srcCompat="@drawable/sound_icon" />
+
+        <ImageView
+            android:id="@+id/type_visual"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/level_n_res"
+            android:layout_alignBottom="@+id/trial_time_res"
+            android:layout_toEndOf="@id/type_audio"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="-4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            app:srcCompat="@drawable/visual" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/type_visual"
+            android:text="Date:"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/level_n_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/type_visual"
+            android:text="Level:"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/trial_time_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/level_n_res"
+            android:layout_toEndOf="@id/type_visual"
+            android:layout_marginStart="4dp"
+            android:text="Trial time:"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/nb_events_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trial_time_res"
+            android:layout_toEndOf="@id/type_visual"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="Nº steps:"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+
+        <ImageView
+            android:id="@+id/green_check"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            android:layout_alignTop="@+id/date"
+            app:srcCompat="@drawable/green_check" />
+
+        <TextView
+            android:id="@+id/corrects_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/green_check"
+            android:layout_alignBottom="@+id/green_check"
+            android:layout_margin="4dp"
+            android:layout_toStartOf="@+id/green_check"
+            android:gravity="center"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/red_cross"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/nb_events_res"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/red_cross" />
+
+        <TextView
+            android:id="@+id/errors_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/red_cross"
+            android:layout_alignBottom="@+id/red_cross"
+            android:layout_margin="4dp"
+            android:layout_toStartOf="@+id/red_cross"
+            android:gravity="center"
+            android:text="0"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
